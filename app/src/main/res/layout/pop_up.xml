@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pop_up"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|left"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <RelativeLayout
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/popup_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:backgroundTint="#CFCFCF"
+            android:gravity="center_horizontal"
+            android:text="@string/pop_up"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/popup_navigate"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popup_text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="150dp"
+            android:background="#80009688"
+            android:backgroundTint="#80009688"
+            android:text="@string/popup_navigate"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/popup_moreInfo"
+            android:layout_width="145dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popup_text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="155dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="#80009688"
+            android:backgroundTint="#80009688"
+            android:text="@string/popup_moreInfo"
+            android:textSize="20sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+</LinearLayout>

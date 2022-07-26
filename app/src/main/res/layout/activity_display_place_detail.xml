@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".displays.DisplayPlaceDetail">
+
+    <ImageButton
+        android:id="@+id/displayPlace_return"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="330dp"
+        android:background="#4DC6C6C6"
+        android:contentDescription="@string/settings"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <ImageView
+        android:id="@+id/displayPlace_icon"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/account_icon"
+        app:srcCompat="@mipmap/ic_info" />
+
+    <TextView
+        android:id="@+id/displayPlace_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/account_title1"
+        android:text="@string/account_loading"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btn_add_fav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="@string/add_fav" />
+
+    <ListView
+        android:id="@+id/displayPlace_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp">
+
+    </ListView>
+
+</LinearLayout>

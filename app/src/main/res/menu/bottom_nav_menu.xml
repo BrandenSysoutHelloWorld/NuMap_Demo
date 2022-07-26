@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_btn_home"
+        android:icon="@drawable/baseline_map_black_24dp"
+        android:title="@string/nav_home" />
+    <item
+        android:id="@+id/nav_btn_download"
+        android:icon="@drawable/baseline_download_for_offline_black_24dp"
+        android:title="@string/download" />
+    <item
+        android:id="@+id/nav_btn_settings"
+        android:icon="@drawable/baseline_settings_black_24dp"
+        android:title="@string/settings" />
+</menu>

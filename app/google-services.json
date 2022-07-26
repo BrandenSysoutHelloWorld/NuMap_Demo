@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "140009032917",
+    "project_id": "numap-1c83b",
+    "storage_bucket": "numap-1c83b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140009032917:android:67e5088cab60a91066665c",
+        "android_client_info": {
+          "package_name": "za.edu.st10112216.numap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140009032917-gu2rd6p2qbd1h5h65kf30s7pe0i2c9ac.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "za.edu.st10112216.numap",
+            "certificate_hash": "04e62dad73eaaf797683e9f38fb356eadfc87f2c"
+          }
+        },
+        {
+          "client_id": "140009032917-p2jhdtngv2oqpfrs6f8pa8agg25p21vf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4itH8JZ9jUmeJ9DcYlfGHBK47ovytQe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140009032917-p2jhdtngv2oqpfrs6f8pa8agg25p21vf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

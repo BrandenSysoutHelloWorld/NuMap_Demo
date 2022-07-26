@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AccountActivity">
+
+    <RelativeLayout
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:visibility="invisible">
+
+        <Space
+            android:id="@+id/space6"
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <ImageButton
+            android:id="@+id/account_btn_return"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="300dp"
+            android:background="#4DC6C6C6"
+            android:contentDescription="@string/settings"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateClickableBoundsCheck" />
+
+        <ImageView
+            android:id="@+id/account_icon"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/account_btn_return"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/account_icon"
+            app:srcCompat="@drawable/baseline_account_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/account_title1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_icon"
+            android:contentDescription="@string/account_title1"
+            android:text="@string/account_loading"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/account_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_title1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/account_btn_edit"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_details"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:alpha="0.5"
+            android:background="#5A5A5A"
+            android:text="@string/account_btn_update_edit"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/account_btn_delete"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_btn_edit"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:background="#5A5A5A"
+            android:text="@string/account_btn_update"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/account_btn_logout"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_btn_delete"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="50dp"
+            android:alpha="0.5"
+            android:background="@color/red"
+            android:text="@string/account_btn_logout"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            tools:ignore="TextContrastCheck" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/edit_account"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/edit_btn_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="300dp"
+            android:background="#4DC6C6C6"
+            android:contentDescription="@string/settings"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+        <ImageView
+            android:id="@+id/edit_icon"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/account_icon"
+            app:srcCompat="@drawable/baseline_account_circle_black_24dp" />
+
+        <TextView
+            android:id="@+id/edit_account_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/edit_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <Space
+            android:id="@+id/space7"
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <Button
+            android:id="@+id/edit_btn_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/update_username"
+            tools:ignore="DuplicateSpeakableTextCheck" />
+
+        <Button
+            android:id="@+id/edit_btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/update_email" />
+
+        <Button
+            android:id="@+id/edit_btn_cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/update_cellphone" />
+
+        <Button
+            android:id="@+id/edit_btn_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/update_password" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/update_password"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/update_btn_return_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="300dp"
+            android:background="#4DC6C6C6"
+            android:contentDescription="@string/settings"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateClickableBoundsCheck" />
+
+        <TextView
+            android:id="@+id/update_password_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/new_password"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_update_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="start|center_vertical"
+            android:hint="@string/input_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/et_update_password_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/input_confirm_password"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/update_btn_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/save_data"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/update_email"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/update_btn_return_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="300dp"
+            android:background="#4DC6C6C6"
+            android:contentDescription="@string/settings"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateClickableBoundsCheck" />
+
+        <TextView
+            android:id="@+id/update_email_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/update_email_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_update_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="start|center_vertical"
+            android:hint="@string/input_email"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/et_update_email_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/input_email_confirm"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress" />
+
+        <Button
+            android:id="@+id/update_btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/save_data"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/update_cellphone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/update_btn_return_cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="300dp"
+            android:background="#4DC6C6C6"
+            android:contentDescription="@string/settings"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateClickableBoundsCheck" />
+
+        <TextView
+            android:id="@+id/update_cellphone_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/update_cellphone_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_update_cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="start|center_vertical"
+            android:hint="@string/input_cellphone"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/et_update_cellphone_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/input_cellphone_confirm"
+            android:importantForAutofill="no"
+            android:inputType="phone"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/update_btn_cellphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/save_data"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/update_username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:visibility="invisible">
+
+        <ImageButton
+            android:id="@+id/update_btn_return_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="300dp"
+            android:background="#4DC6C6C6"
+            android:contentDescription="@string/settings"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/baseline_arrow_back_24"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck,DuplicateClickableBoundsCheck" />
+
+        <TextView
+            android:id="@+id/update_username_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/update_username_title"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/et_update_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:gravity="start|center_vertical"
+            android:hint="@string/input_username"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="TextContrastCheck" />
+
+        <EditText
+            android:id="@+id/et_update_username_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:hint="@string/input_username"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            tools:ignore="TextContrastCheck" />
+
+        <Button
+            android:id="@+id/update_btn_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/save_data"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

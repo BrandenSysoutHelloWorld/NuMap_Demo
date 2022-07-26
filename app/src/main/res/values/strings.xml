@@ -1,0 +1,98 @@
+<resources>
+    <!--
+    Google Maps API KEY
+    -->
+    <string name="map_key">google_api_key</string>
+    <!--
+    User Login and Registration Strings
+    -->
+    <string name="app_name">NuMap</string>
+    <string name="title_login">Welcome.</string>
+    <string name="title1_login">Enter Details to Login !</string>
+    <string name="title2_login">Enter Details to Register !</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+    <string name="input_email">Enter Email</string>
+    <string name="input_username">Enter Username</string>
+    <string name="input_cellphone">Enter Cellphone Number</string>
+    <string name="input_confirm_password">Confirm Password</string>
+    <string name="password">Password :</string>
+    <string name="input_password">Password</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register_login">Back to Login</string>
+    <string name="btn_register">Register</string>
+    <string name="scroll_view">NuMap</string>
+    <string name="register_icon">register_icon</string>
+
+    <string name="search_bar">Destination</string>
+
+    <string name="person">Account</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="download">Download</string>
+    <string name="current_location">current_location</string>
+    <string name="send_location">send_location</string>
+    <string name="btn_search_location">search_location</string>
+    <string name="title_account">Account Details</string>
+    <string name="account_title">Welcome Back</string>
+    <string name="account_title1" />
+    <string name="account_icon" />
+    <string name="account_btn_map">Open Map</string>
+    <string name="account_username">User: </string>
+    <string name="account_btn_logout">Log Out</string>
+    <string name="nav_home">Map</string>
+    <string name="account_btn_update">Delete Account</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_account">Account Settings</string>
+    <string name="settings_conversion">Change Distance Unit</string>
+    <string name="settings_kilo">Kilometres</string>
+    <string name="settings_miles">Miles</string>
+    <string name="account_btn_back">Return</string>
+    <string name="account_loading">Loading…</string>
+    <string name="map_menu_landmark">landmarks</string>
+    <string name="landmark_title">Landmarks Near Me</string>
+    <string name="pop_up">Pop-Up</string>
+    <string name="popup_navigate">Close</string>
+    <string name="popup_moreInfo">More Info</string>
+    <string name="clear_map">Clear Map</string>
+    <string name="directions">Directions</string>
+    <string name="account_btn_update_edit">Edit Account</string>
+    <string name="edit_title">Update your profile.</string>
+    <string name="edit_name">Username</string>
+    <string name="edit">Change</string>
+    <string name="new_password">Enter your new password</string>
+    <string name="save_data">Save</string>
+    <string name="update_password">Change Your Password</string>
+    <string name="update_cellphone">Change Your Cellphone Number</string>
+    <string name="update_username">Change Your Username</string>
+    <string name="update_email">Change Your Email</string>
+    <string name="landmark_fire" />
+    <string name="landmark_hospital" />
+    <string name="landmark_police" />
+    <string name="landmark_cafe" />
+    <string name="landmark_restaurant" />
+    <string name="landmark_art" />
+    <string name="landmark_theatre" />
+    <string name="landmark_shopping" />
+    <string name="settings_landmark">Preferred Landmark</string>
+    <string name="spinner">spinner_landmark</string>
+    <string name="landmark_fav_title">Favorited Landmarks</string>
+    <string name="fav_landmark" />
+    <string name="fav_btn_delete">Delete</string>
+    <string name="fav_btn_mark">Find Landmark</string>
+    <string name="add_fav">Add To Favourites</string>
+    <string name="map_fav_landmark" />
+    <string name="input_email_confirm">Confirm Email</string>
+    <string name="update_email_title">Enter your new email</string>
+    <string name="update_cellphone_title">Enter your new cellphone number</string>
+    <string name="input_cellphone_confirm">Confirm Cellphone Number</string>
+    <string name="update_username_title">Enter your new username</string>
+    <string name="start_nav">Start</string>
+    <string name="End_nav">End</string>
+    <string name="fav_remove">Remove Landmark</string>
+    <string name="share_copy">Copy Link</string>
+    <string name="share_fb">Share</string>
+    <string name="walk">walk</string>
+
+
+</resources>

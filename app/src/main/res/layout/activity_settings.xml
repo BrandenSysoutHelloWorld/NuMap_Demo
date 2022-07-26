@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_map"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SettingsActivity">
+
+    <ImageButton
+        android:id="@+id/settings_btn_return"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/space6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="300dp"
+        android:background="#4DC6C6C6"
+        android:contentDescription="@string/settings"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:srcCompat="@drawable/baseline_arrow_back_24"
+        tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+    <Space
+        android:id="@+id/space6"
+        android:layout_width="match_parent"
+        android:layout_height="5dp" />
+
+    <ImageView
+        android:id="@+id/account_icon2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/settings_btn_return"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/account_icon"
+        app:srcCompat="@drawable/baseline_settings_black_24dp" />
+
+    <TextView
+        android:id="@+id/account_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_icon2"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/settings_title"
+        android:text="@string/settings_title"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="34sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="255dp"
+        android:layout_below="@+id/account_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="200dp"
+        android:background="#4DC6C6C6"
+        tools:context=".activities.SettingsActivity">
+
+        <TextView
+            android:id="@+id/account_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="23dp"
+            android:layout_toStartOf="@+id/settings_btn_account"
+            android:contentDescription="@string/settings_account"
+            android:text="@string/settings_account"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/settings_btn_account"
+            android:layout_width="107dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="210dp"
+            android:background="#FFFFFF"
+            android:contentDescription="@string/settings"
+            app:srcCompat="@drawable/baseline_account_circle_black_24dp"
+            tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
+
+        <TextView
+            android:id="@+id/account_title3"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_title2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="161dp"
+            android:contentDescription="@string/settings_conversion"
+            android:text="@string/settings_conversion"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/settings_swtch_units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_title3"
+            android:layout_toEndOf="@+id/account_title4"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:splitTrack="false"
+            android:thumbTint="@color/teal_700"
+            android:trackTint="#707070"
+            tools:checked="false"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/account_title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_title3"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/settings_swtch_units"
+            android:contentDescription="@string/settings_miles"
+            android:text="@string/settings_miles"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/account_title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/account_title3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/settings_conversion"
+            android:text="@string/settings_kilo"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

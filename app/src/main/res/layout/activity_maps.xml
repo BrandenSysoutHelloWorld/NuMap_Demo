@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/fav_landmark">
+
+    <LinearLayout
+        android:id="@+id/overlay_fav_landmark"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:visibility="invisible">
+
+        <TextView
+            android:id="@+id/landmark_fav_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/title_login"
+            android:text="@string/landmark_fav_title"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/landmarkFav_btn_return"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="330dp"
+            android:background="#4DC6C6C6"
+            android:contentDescription="@string/settings"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            tools:ignore="ImageContrastCheck" />
+
+        <Spinner
+            android:id="@+id/fav_spin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/landmark_fav_title"
+            android:minHeight="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/fav_btn_mark"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#4DC6C6C6"
+                android:backgroundTint="#4DC6C6C6"
+                android:backgroundTintMode="screen"
+                android:text="@string/fav_btn_mark" />
+
+            <Button
+                android:id="@+id/fav_btn_delete"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#4DC6C6C6"
+                android:backgroundTint="#4DC6C6C6"
+                android:backgroundTintMode="screen"
+                android:text="@string/fav_btn_delete" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/overlay_landmark"
+        android:layout_width="wrap_content"
+        android:layout_height="519dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        tools:visibility="invisible">
+
+        <TextView
+            android:id="@+id/landmark_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/title_login"
+            android:text="@string/landmark_title"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <ImageButton
+            android:id="@+id/landmark_btn_return"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="330dp"
+            android:background="#4DC6C6C6"
+            android:contentDescription="@string/settings"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:src="@drawable/baseline_arrow_back_24"
+            tools:ignore="ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_landmarks2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/landmark_fire"
+            android:src="@drawable/baseline_local_fire_department_black_24dp"
+            android:theme="@style/Theme.overlay"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_landmarks3"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/landmark_hospital"
+            android:src="@drawable/baseline_medical_services_black_24dp"
+            android:theme="@style/Theme.overlay"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_landmarks4"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/landmark_police"
+            android:src="@drawable/baseline_local_police_black_24dp"
+            android:theme="@style/Theme.overlay"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_landmarks5"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/landmark_cafe"
+            android:src="@drawable/baseline_local_cafe_black_24dp"
+            android:theme="@style/Theme.overlay"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_landmarks6"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/landmark_restaurant"
+            android:src="@drawable/baseline_restaurant_black_24dp"
+            android:theme="@style/Theme.overlay"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_landmarks7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/landmark_art"
+            android:src="@drawable/baseline_museum_black_24dp"
+            android:theme="@style/Theme.overlay"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_landmarks8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/landmark_theatre"
+            android:src="@drawable/baseline_theater_comedy_black_24dp"
+            android:theme="@style/Theme.overlay"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/btn_landmarks9"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="160dp"
+            android:contentDescription="@string/landmark_shopping"
+            android:src="@drawable/baseline_store_mall_directory_black_24dp"
+            android:theme="@style/Theme.overlay"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/autocomplete"
+            android:layout_width="385dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="5dp">
+
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/autocomplete_fragment1"
+                android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.fragment.app.FragmentContainerView>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_above="@+id/bottom_navigation_view"
+            android:layout_below="@id/autocomplete"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            tools:context=".activities.MapsActivity">
+
+        </androidx.fragment.app.FragmentContainerView>
+
+        <TextView
+            android:id="@+id/dest_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/autocomplete"
+            android:textAlignment="center" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/white"
+            android:theme="@style/Theme.Menu"
+            app:menu="@menu/bottom_nav_menu">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+        <Button
+            android:id="@+id/btn_directions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_clearMap"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="250dp"
+            android:background="@color/white"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/directions" />
+
+        <Button
+            android:id="@+id/btn_start_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_directions"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="250dp"
+            android:background="@color/green"
+            android:backgroundTint="@color/green"
+            android:text="@string/start_nav" />
+
+        <Button
+            android:id="@+id/btn_end_nav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_start_nav"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="400dp"
+            android:layout_marginEnd="250dp"
+            android:background="@color/red"
+            android:backgroundTint="@color/red"
+            android:text="@string/End_nav" />
+
+        <Button
+            android:id="@+id/btn_clearMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottom_navigation_view"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="250dp"
+            android:background="@color/white"
+            android:backgroundTint="#FFFFFF"
+            android:text="@string/clear_map" />
+
+        <RelativeLayout
+            android:id="@+id/overlay"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/map"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="0dp"
+            android:alpha="0.5"
+            android:background="#00424242">
+
+            <ImageButton
+                android:id="@+id/btn_current_location"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"
+                android:contentDescription="@string/current_location"
+                android:src="@drawable/baseline_gps_fixed_black_24dp"
+                android:theme="@style/Theme.overlay"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/btn_send_location"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/btn_current_location"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/send_location"
+                android:src="@drawable/baseline_send_black_24dp"
+                android:theme="@style/Theme.overlay"
+                tools:ignore="ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/btn_landmarks"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/btn_send_location"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/map_menu_landmark"
+                android:src="@drawable/baseline_fort_black_24dp"
+                android:theme="@style/Theme.overlay" />
+
+            <ImageButton
+                android:id="@+id/btn_favorite"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/btn_landmarks"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/map_fav_landmark"
+                android:src="@drawable/baseline_star_black_24dp"
+                android:theme="@style/Theme.overlay"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageButton
+                android:id="@+id/btn_walk_mode"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_below="@+id/btn_favorite"
+                android:layout_marginTop="5dp"
+                android:contentDescription="@string/walk"
+                android:src="@drawable/baseline_directions_walk_black_24dp"
+                android:theme="@style/Theme.overlay" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
