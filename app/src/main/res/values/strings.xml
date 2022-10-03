@@ -2,7 +2,7 @@
     <!--
     Google Maps API KEY
     -->
-    <string name="map_key">google_api_key</string>
+    <string name="map_key">AIzaSyDb1b4oYT79vClErZ9d6eCqgivPVk9PSvc</string>
     <!--
     User Login and Registration Strings
     -->
@@ -93,6 +93,7 @@
     <string name="share_copy">Copy Link</string>
     <string name="share_fb">Share</string>
     <string name="walk">walk</string>
+    <string name="loginGoogle">Login With Google</string>
 
 
 </resources>

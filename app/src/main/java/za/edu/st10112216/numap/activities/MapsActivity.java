@@ -90,6 +90,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
+import io.opencensus.resource.Resource;
 import za.edu.st10112216.numap.R;
 import za.edu.st10112216.numap.classes.FavouriteLandmarks;
 import za.edu.st10112216.numap.classes.UserDetailsClass;
@@ -631,13 +632,15 @@ public class MapsActivity extends FragmentActivity
             }
             String textView = "Your Current Location is :" + "\n" + lat + "," + lng;
 
+            String fb = getString(R.string.share_fb);
+            String clipBoard = getString(R.string.share_copy);
             LayoutInflater layoutInflater = (LayoutInflater) MapsActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
             @SuppressLint("InflateParams") View customView = layoutInflater.inflate(R.layout.pop_up, null);
             TextView popupText = customView.findViewById(R.id.popup_text);
             closePopup = customView.findViewById(R.id.popup_navigate);
             moreInfo = customView.findViewById(R.id.popup_moreInfo);
-            moreInfo.setText(R.string.share_copy);
-            closePopup.setText(R.string.share_fb);
+            moreInfo.setText(clipBoard);
+            closePopup.setText(fb);
 
             //instantiate popup window
             popupWindowShareOption = new PopupWindow(customView, LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
@@ -1244,7 +1247,7 @@ public class MapsActivity extends FragmentActivity
             index++;
             Log.d(TAG, "onPolylineClick: toString: " + polylineData.toString());
             if (polyline.getId().equals(polylineData.getPolyline().getId())) {
-                polylineData.getPolyline().setColor(ContextCompat.getColor(getApplicationContext(), com.google.android.libraries.places.R.color.quantum_googblue));
+                polylineData.getPolyline().setColor(ContextCompat.getColor(getApplicationContext(), com.google.android.libraries.places.R.color.quantum_lightblue));
                 polylineData.getPolyline().setZIndex(1);
 
                 LatLng endLocation = new LatLng(
@@ -1388,6 +1391,8 @@ public class MapsActivity extends FragmentActivity
 
             }
     }
+
+
 
 }
 

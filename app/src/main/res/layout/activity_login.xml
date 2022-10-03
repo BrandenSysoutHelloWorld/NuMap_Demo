@@ -119,6 +119,17 @@
                 android:text="@string/btn_register"
                 android:textColor="#FFFFFF"
                 android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/btnGoogleLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/account_btn_back"
+                app:srcCompat="@drawable/common_google_signin_btn_icon_dark" />
+
         </LinearLayout>
 
     </ScrollView>

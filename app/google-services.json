@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "140009032917",
+    "firebase_url": "https://numap-1c83b-default-rtdb.firebaseio.com",
     "project_id": "numap-1c83b",
     "storage_bucket": "numap-1c83b.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "140009032917-2bs12hitkkchtssvlbdhki9sg7d625ko.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "za.edu.st10112216.numap",
+            "certificate_hash": "0589a29252615bfe6a9447367895b806c1aa8462"
+          }
+        },
         {
           "client_id": "140009032917-gu2rd6p2qbd1h5h65kf30s7pe0i2c9ac.apps.googleusercontent.com",
           "client_type": 1,
